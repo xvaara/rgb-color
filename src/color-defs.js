@@ -32,9 +32,9 @@ const colorDefs = [
       const c = (1 - Math.abs(2 * l - 1)) * s;
       const x = c * (1 - Math.abs(((h / 60) % 2) - 1));
       const m = l - c / 2;
-      let r = 0;
-      let g = 0;
-      let b = 0;
+      let r;
+      let g;
+      let b;
 
       if (h >= 0 && h < 60) {
         r = c; g = x; b = 0;
